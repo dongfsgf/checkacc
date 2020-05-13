@@ -1,0 +1,6 @@
+spring:
+  config:
+    file:
+      work: C:\\file\\work\\
+      error: C:\\file\\error\\
+      backup: C:\\file\\backup\\
