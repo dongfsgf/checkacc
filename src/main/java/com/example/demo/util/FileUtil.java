@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 /**
- * @description: fileUtils
+ * @description: fileUtils 将source的文件加密后输出到target目标文件
  * @author: fashion wei
  * @create: 2020-05-13
  **/

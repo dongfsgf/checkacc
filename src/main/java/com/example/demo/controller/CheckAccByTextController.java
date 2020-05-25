@@ -35,7 +35,7 @@ public class CheckAccByTextController {
 
         log.info("go to the query the acc:" + acc);
         if (StringUtils.isEmpty(acc) || acc.length() != ACC_LENGTH || !acc.startsWith(ACC_TYPE)) {
-            mode.addObject("error", "账号为空或者格式不正确！");
+            mode.addObject("error", "NO");
             mode.setViewName("error111");
             return mode;
 
@@ -58,14 +58,11 @@ public class CheckAccByTextController {
             mode.setViewName("error111");
             return mode;
         }
-//        String workpath = files[files.length - 1].getPath();
         String workpath = work+"\\acc.txt";
         File workfile = new File(workpath);
-        String pathSource = workfile.getPath();
         String pathTarget =
                 workpath.substring(0,workpath.indexOf("."))+
                         "_md5" + workpath.substring(workpath.indexOf("."));
-        FileUtil.encryptionChar(pathSource, pathTarget);
         String accInFile;
         long startTime = System.currentTimeMillis();
 
@@ -81,7 +78,6 @@ public class CheckAccByTextController {
                     break;
                 }
             }
-
             in.close();
             if (!flag) {
 

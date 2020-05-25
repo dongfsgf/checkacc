@@ -34,10 +34,10 @@
 
 <form method="post" action="${pageContext.request.contextPath}/page" id="query">
     <div id="aaa" style="height: 300px;margin-top: 200px">
-        <h3>您好！请输入账号：</h3>
+        <h3>您好！请输入需要验证的信息</h3>
 
         <input type="text" name="acc" value="" style="width: 174px;height: 30px;"/>
-        <input type="button" value="开始检索" style="height: 35px;width:84px;font-size: 16px;"
+        <input type="button" value="查询" style="height: 35px;width:84px;font-size: 16px;"
            onclick="javascript:document.getElementById('query').submit();"/>
     </div>
 
